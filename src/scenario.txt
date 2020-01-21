@@ -1,0 +1,3 @@
+GIVEN I liked new cat image
+WHEN I add new image to favorites
+THEN Given image is accessible through favorites
