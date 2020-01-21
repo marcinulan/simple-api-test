@@ -1,2 +1,2 @@
 ## Simple API test
-### Created for purpose of recrutation
+### Created for the purpose of recrutation
