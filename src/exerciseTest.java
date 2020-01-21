@@ -1,4 +1,5 @@
 import io.restassured.http.ContentType;
+import io.restassured.response.ResponseBody;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
@@ -14,7 +15,7 @@ public class exerciseTest {
     int favId = rand.nextInt(99999);
 
     String getImageId() {
-        var response = given().
+        ResponseBody response = given().
                         param("size", "small").
                         param("limit", "1").
                         param("page", "33").
@@ -25,7 +26,6 @@ public class exerciseTest {
                     then().
                         statusCode(200).
                         contentType(ContentType.JSON).extract().response().body();
-        String randomId = response.asString();
         String imageId = response.jsonPath().get("id[0]");
         return imageId;
     }
