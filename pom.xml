@@ -1,7 +1,7 @@
 <project>
 <modelVersion>4.0.0</modelVersion>
 <groupId>com.ulan</groupId>
-<artifactId>Excercise</artifactId>
+<artifactId>Exercise</artifactId>
 <packaging>jar</packaging>
 <version>0.1</version>
 <dependencies>
@@ -21,6 +21,12 @@
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
         <version>2.9.10.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-all</artifactId>
+        <version>1.3</version>
+        <scope>test</scope>
     </dependency>
 </dependencies>
 </project>
